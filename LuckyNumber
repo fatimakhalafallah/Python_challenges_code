@@ -1,0 +1,40 @@
+
+def isLucky(n):
+    num = str(n)
+    lis = list(num)
+    half = len(lis) // 2
+    firstnum = lis[:half]
+    secondnum = lis[half:]
+    f = firstnumfun(firstnum)
+    s = secondnumfun(secondnum)
+    if f == s:
+        print('it is luncky Number')
+    else:
+        print('It is not Luncky Number ha ha')
+
+def firstnumfun(firstnum):
+    a1 = 0
+    for i in firstnum:
+        a1 = a1 + int(i)
+    print(a1)
+    return a1
+
+def secondnumfun(secondnum):
+    a2 = 0
+    for j in secondnum:
+        a2 = a2 + int(j)
+    print(a2)
+    return a2
+
+n = 1230
+isLucky(n)
+
+
+
+# Ticket numbers usually consist of an even number of digits.
+# A ticket number is considered lucky if
+# the sum of the first half of the digits is equal to the sum of the second half.
+# Given a ticket number n, determine if it's lucky or not.
+# Example
+# For n = 1230, the output should be
+# isLucky(n) = true;
