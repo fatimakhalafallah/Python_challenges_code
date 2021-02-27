@@ -1,0 +1,11 @@
+def makeArrayConsecutive2(statues):
+     maxli=max(statues)
+     minli= min(statues)
+     li2=list(range(minli,maxli+1))
+
+     diff =   len(li2) - len(statues)
+     print(diff)
+
+
+statues = [2,3,6,8]
+makeArrayConsecutive2(statues)
