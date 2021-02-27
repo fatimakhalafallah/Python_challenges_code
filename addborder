@@ -1,0 +1,10 @@
+
+
+w = ["abc","ded"]
+li=[]
+
+li=[w[i].center(len(w[i])+2,'*') for i in range(len(w))]
+bor= len(li[0]) # the number of column
+li.insert(0,'*'*bor)
+li.insert(len(li),'*'*bor)
+print(li)
